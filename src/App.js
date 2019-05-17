@@ -1,5 +1,6 @@
 import React from 'react'
+import Search from './Search'
 
-const App = props => <h1>Works</h1>
+const App = props => <Search />
 
 export default App
