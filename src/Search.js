@@ -21,7 +21,7 @@ const Search = props => {
   const handleInput = async e => {
     const query = e.target.value
 
-    clearTimeout(delay)
+    delay && clearTimeout(delay)
 
     setDelay(setTimeout(() => fetchStories(query), 250))
 
@@ -49,7 +49,6 @@ const Search = props => {
         <ul className="results">
           {stories.map(story => (
             <li key={story.objectID}>
-              <span />{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"

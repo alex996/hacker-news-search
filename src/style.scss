@@ -46,13 +46,26 @@ body {
 
   .results {
     list-style: none;
-    padding: 0.75rem;
+    padding: 0.5rem 0;
     margin: 0;
 
     li {
       a {
         display: flex;
         text-decoration: none;
+        padding: 1rem;
+
+        &:link {
+          color: #1967d2;
+        }
+
+        &:visited {
+          color: #609;
+        }
+
+        &:hover {
+          background: #eee;
+        }
 
         .title {
           flex: 1;
@@ -63,10 +76,6 @@ body {
         .author {
           color: #6d6d6d;
         }
-      }
-
-      &:not(:last-child) {
-        padding-bottom: 1.75rem;
       }
     }
   }
