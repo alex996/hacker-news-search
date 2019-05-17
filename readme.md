@@ -1,6 +1,8 @@
 # Hacker News Search
 
-Explore [Hacker News](https://news.ycombinator.com/) stories.
+> See [live demo](https://alex996.github.io/hacker-news-search/) on GitHub Pages.
+
+[Hacker News](https://news.ycombinator.com/) feed search with autocomplete.
 
 ## Installation
 
