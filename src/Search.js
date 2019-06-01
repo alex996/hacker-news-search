@@ -23,7 +23,11 @@ const Search = props => {
 
     delay && clearTimeout(delay)
 
-    setDelay(setTimeout(() => fetchStories(query), 250))
+    if (query) {
+      setDelay(setTimeout(() => fetchStories(query), 250))
+    } else {
+      setStories([])
+    }
 
     setInput(query)
   }
