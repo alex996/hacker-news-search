@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 10% 1rem 0;
+  margin: 5rem 1rem 0;
   padding: 1rem;
   border: 1px solid #c1c1c1;
   border-radius: 1.5rem;
@@ -63,7 +63,8 @@ body {
           color: #609;
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: #eee;
         }
 

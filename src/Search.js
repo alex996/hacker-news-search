@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import clsx from 'clsx'
 
 const API_URL =
-  'https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=10&query='
+  'https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=15&query='
 
 const Search = props => {
   const [input, setInput] = useState('')
@@ -11,9 +11,12 @@ const Search = props => {
   const [delay, setDelay] = useState()
 
   const fetchStories = async query => {
+    // TODO: Flash a toast message if the query fails
     const res = await fetch(`${API_URL}${query}`)
 
-    const { hits: stories } = await res.json()
+    const { hits } = await res.json()
+
+    const stories = hits.filter(hit => hit.url)
 
     setStories(stories)
   }
