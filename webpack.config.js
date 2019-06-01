@@ -7,7 +7,7 @@ module.exports = (env, { mode }) => {
   return {
     devtool: 'cheap-module-source-map',
     output: {
-      filename: '[name].[contenthash].js'
+      filename: inDev ? '[name].js' : '[name].[contenthash].js'
     },
     module: {
       rules: [
