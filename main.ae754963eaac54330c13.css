@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 10% 1rem 0;
+  margin: 5rem 1rem 0;
   padding: 1rem;
   border: 1px solid #c1c1c1;
   border-radius: 1.5rem; }
@@ -44,7 +44,7 @@ body {
         color: #1967d2; }
       .search .results li a:visited {
         color: #609; }
-      .search .results li a:hover {
+      .search .results li a:hover, .search .results li a:focus {
         background: #eee; }
       .search .results li a .title {
         flex: 1;
@@ -54,4 +54,4 @@ body {
         color: #6d6d6d; }
 
 
-/*# sourceMappingURL=main.253e628593320475eb89.css.map*/
+/*# sourceMappingURL=main.ae754963eaac54330c13.css.map*/
